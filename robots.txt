@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vivek.finnotechpulse.com/sitemap.xml

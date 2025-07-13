@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek Singh - Software Engineer CV</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Light gray background */
+        }
+        .cv-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background-color: #ffffff;
+            padding: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 0.75rem; /* Rounded corners for the main container */
+        }
+        .section-title {
+            color: #1a73e8; /* A professional blue */
+            border-bottom: 2px solid #e0e0e0; /* Light gray line below titles */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .experience-item {
+            margin-bottom: 1.5rem;
+        }
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        }
+        .experience-header div {
+            flex-shrink: 0; /* Prevent shrinking */
+        }
+        .experience-header .company {
+            font-weight: 600;
+            color: #333;
+        }
+        .experience-header .location {
+            font-style: italic;
+            color: #555;
+            margin-left: 0.5rem; /* Space between company and location */
+        }
+        .experience-header .dates {
+            font-weight: 500;
+            color: #555;
+            text-align: right; /* Align dates to the right */
+        }
+        .experience-description ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            padding-left: 0.5rem;
+        }
+        .experience-description li {
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+        .skill-category {
+            font-weight: 600;
+            color: #333;
+            margin-right: 0.5rem;
+            flex-basis: 100%; /* Ensure category title takes full width */
+            margin-top: 0.75rem; /* Add space above each category */
+        }
+        .skill-category:first-child {
+            margin-top: 0; /* No top margin for the first category */
+        }
+        .skill-item {
+            background-color: #e6f0ff; /* Light blue background for skill tags */
+            color: #1a73e8; /* Blue text for skill tags */
+            padding: 0.3rem 0.75rem;
+            border-radius: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .contact-info a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .list-item-no-bullet {
+            list-style-type: none; /* Remove bullet for education/certifications */
+            margin-left: 0;
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <div class="cv-container">
+        <!-- Header Section -->
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold uppercase text-gray-900 mb-2">VIVEK SINGH</h1>
+            <p class="text-xl font-medium uppercase text-gray-600">Software Engineer</p>
+        </header>
+
+        <!-- Contact Section -->
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold section-title">Contact</h2>
+            <ul class="list-none p-0 contact-info">
+                <li class="mb-1"><span class="font-medium">Mobile:</span> +91 9507284656</li>
+                <li class="mb-1"><span class="font-medium">Email:</span> <a href="mailto:vivekkumarsingh791@gmail.com">vivekkumarsingh791@gmail.com</a></li>
+                <li class="mb-1"><span class="font-medium">Location:</span> Patna, Bihar, India</li>
+                <li class="mb-1"><span class="font-medium">LinkedIn:</span> <a href="https://www.linkedin.com/in/vivek791" target="_blank">www.linkedin.com/in/vivek791</a></li>
+                <li class="mb-1"><span class="font-medium">Portfolio:</span> <a href="https://vivek.finnotechpulse.com/" target="_blank">vivek.finnotechpulse.com</a></li>
+            </ul>
+        </section>
+
+        <!-- Summary Section -->
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold section-title">Summary</h2>
+            <p class="leading-relaxed">
+                Dedicated and results-driven Software Engineer with 3.5+ years of experience in full-stack web development, specializing in .NET Core Web API, ABP Framework, and GIS technologies. Proven expertise in designing N-tier, Clean, and Modular architectures for enterprise-grade projects, with proficiency in ASP.NET MVC, Node.js, C#, JavaScript, HTML/CSS, PostgreSQL, AWS EC2, and Cesium 3D. Adept at developing and managing new application modules, designing REST APIs, and delivering high-quality, maintainable solutions that align with business objectives and drive project success, particularly in interactive spatial applications and product development.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold section-title">Skills</h2>
+            <div class="flex flex-wrap gap-2 text-sm">
+                <span class="skill-category">Programming Languages:</span>
+                <span class="skill-item">C#</span>
+                <span class="skill-item">JavaScript</span>
+
+                <span class="skill-category">Frontend:</span>
+                <span class="skill-item">HTML/CSS</span>
+                <span class="skill-item">jQuery</span>
+                <span class="skill-item">Leaflet</span>
+                <span class="skill-item">OpenLayers</span>
+                <span class="skill-item">Cesium 3D.js</span>
+
+                <span class="skill-category">Backend:</span>
+                <span class="skill-item">.NET Core</span>
+                <span class="skill-item">ASP.NET Core Web API</span>
+                <span class="skill-item">ASP.NET MVC</span>
+                <span class="skill-item">ABP Framework</span>
+                <span class="skill-item">Node.js</span>
+                <span class="skill-item">EF Core</span>
+
+                <span class="skill-category">Databases:</span>
+                <span class="skill-item">PostgreSQL</span>
+                <span class="skill-item">PostGIS</span>
+                <span class="skill-item">SQL</span>
+
+                <span class="skill-category">GIS Technologies:</span>
+                <span class="skill-item">GIS (Geographic Information Systems)</span>
+                <span class="skill-item">WMS</span>
+                <span class="skill-item">QGIS</span>
+                <span class="skill-item">GeoServer</span>
+                <span class="skill-item">Rasterio</span>
+
+                <span class="skill-category">Cloud/DevOps:</span>
+                <span class="skill-item">AWS EC2</span>
+                 <span class="skill-item">Docker</span>
+                <span class="skill-item">IIS</span>
+
+                <span class="skill-category">Tools & Concepts:</span>
+                <span class="skill-item">Software Design</span>
+                <span class="skill-item">Web Engineering</span>
+                <span class="skill-item">Database Management</span>
+                <span class="skill-item">Visual Studio</span>
+                <span class="skill-item">VS Code</span>
+                <span class="skill-item">Postman</span>
+                <span class="skill-item">SourceTree (Git)</span>
+                <span class="skill-item">PGAdmin</span>
+                <span class="skill-item">Redmine Project Management Tool</span>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold section-title">Professional Experience</h2>
+
+            <!-- RMSI -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <span class="company text-lg">RMSI</span>
+                        <span class="location">| Noida, Uttar Pradesh, India</span>
+                    </div>
+                    <span class="dates">April 2025 – Present</span>
+                </div>
+                <p class="font-medium text-gray-700 mb-2">Software Engineer</p>
+                <div class="experience-description">
+                    <ul>
+                        <li>Developed and managed new application modules, designed and implemented REST APIs, and contributed to end-to-end software design.</li>
+                        <li>Specialized in GIS development using Leaflet, PostGIS, and WMS services, delivering interactive spatial applications and high-quality, maintainable solutions aligned with business objectives.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Scanpoint Geomatics Ltd -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <span class="company text-lg">Scanpoint Geomatics Ltd</span>
+                        <span class="location">| Ahmedabad, Gujarat, India</span>
+                    </div>
+                    <span class="dates">April 2023 – March 2025 (2 years)</span>
+                </div>
+                <p class="font-medium text-gray-700 mb-2">Software Engineer</p>
+                <div class="experience-description">
+                    <ul>
+                        <li>Spearheaded projects in Disaster Management and Agriculture domains, pioneering the development of spatially aware applications utilizing open-source GIS tools such as GeoServer, QGIS, OpenLayers, Leaflet, and Cesium 3D JS.</li>
+                        <li>Leveraged diverse technologies including IIS, jQuery, EF Core, GIS, Node.js, .NET Core ABP Framework, PostGIS, and Rasterio to deliver innovative and impactful GIS solutions.</li>
+                        <li>Significantly improved decision-making processes and streamlined operations, leading to tangible benefits for clients.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Scanpoint Geomatics Ltd - Associate Software Engineer -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <span class="company text-lg">Scanpoint Geomatics Ltd</span>
+                        <span class="location">| Ahmedabad, Gujarat, India</span>
+                    </div>
+                    <span class="dates">April 2022 – March 2023 (1 year)</span>
+                </div>
+                <p class="font-medium text-gray-700 mb-2">Associate Software Engineer</p>
+                <div class="experience-description">
+                    <ul>
+                        <li>Honed expertise in Internet Information Services (IIS), jQuery, EF Core, GIS, Node.js, Cesium 3D.js, .NET Core ABP Framework, PostGIS, and database management.</li>
+                        <li>Played a pivotal role in projects focused on Forest and Smart City Proof of Concepts (POCs), as well as Crime Analysis Product Development.</li>
+                        <li>Contributed effectively to project success by delivering high-quality solutions and embracing continuous learning.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Scanpoint Geomatics Ltd - Full-stack Developer -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <span class="company text-lg">Scanpoint Geomatics Ltd</span>
+                        <span class="location">| Ahmedabad, Gujarat, India</span>
+                    </div>
+                    <span class="dates">August 2021 – June 2022 (11 months)</span>
+                </div>
+                <p class="font-medium text-gray-700 mb-2">Full-stack Developer</p>
+                <div class="experience-description">
+                    <ul>
+                        <li>Mastered HTML, CSS, database management, .NET Core ABP Framework, JavaScript, jQuery, and Node.js.</li>
+                        <li>Developed Proof of Concept (POC) projects for diverse domains like CABS, Smart City, and Highway Tollbooth.</li>
+                        <li>Built a robust foundation in full-stack development through hands-on learning and project work.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Acty System India, Pvt. Ltd -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <span class="company text-lg">Acty System India, Pvt. Ltd</span>
+                        <span class="location">| Ahmedabad, Gujarat, India</span>
+                    </div>
+                    <span class="dates">February 2021 – May 2021 (4 months)</span>
+                </div>
+                <p class="font-medium text-gray-700 mb-2">Software Programmer</p>
+                <div class="experience-description">
+                    <ul>
+                        <li>Learned the basics of C# programming and developed console-based applications.</li>
+                        <li>Gained foundational programming skills and contributed to initial software development tasks.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold section-title">Education</h2>
+            <ul class="list-none p-0">
+                <li class="mb-1">
+                    <span class="font-medium text-lg">RK University</span> | Rajkot, India
+                </li>
+                <li class="mb-1 text-gray-700">
+                    Bachelor of Technology - BTech, Computer Engineering | 2017 – 2021
+                </li>
+            </ul>
+        </section>
+
+        <!-- Certifications Section -->
+        <section>
+            <h2 class="text-2xl font-semibold section-title">Certifications</h2>
+            <ul class="list-disc ml-6">
+                <li class="mb-1">Reliable Cloud Infrastructure: Design and Process</li>
+                <li class="mb-1">Essential Google Cloud Infrastructure: Core Services</li>
+                <li class="mb-1">Architecting with Google Compute Engine</li>
+                <li class="mb-1">Spoken Tutorial Php and MySQL</li>
+                <li class="mb-1">Spoken Tutorial Java Programming</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek Singh - Software Engineer Portfolio</title>
+    <meta name="description" content="Vivek Singh's professional portfolio showcasing expertise in .NET Core, GIS development, full-stack engineering, and featured projects, including finance and AI tools. Explore my skills, experience, and future goals.">
+    <meta name="keywords" content="Vivek Singh, Software Engineer, Full Stack Developer, GIS Developer, .NET Core, ASP.NET Core, Node.js, JavaScript, PostgreSQL, AWS EC2, Docker, Python FastAPI, WebSockets, The Profit Era, FinnotechPulse, AI tools, ChatGPT, DeepSeek, GROK, Gemini, Copilot, Portfolio, Web Development, Enterprise Applications, Clean Architecture, Scalable Systems">
+    <meta name="author" content="Vivek Singh">
+    <meta name="robots" content="index, follow">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to Google Fonts (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-gray-100">
+
+    <!-- Fixed Top Navigation -->
+    <nav class="fixed top-0 left-0 w-full bg-gradient-to-r from-gray-900 to-black bg-opacity-80 backdrop-blur-md z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold text-white">Vivek Singh</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="nav-link text-white">About</a>
+                <a href="#skills" class="nav-link text-white">Skills</a>
+                <a href="#projects" class="nav-link text-white">Projects</a>
+                <a href="#experience" class="nav-link text-white">Experience</a>
+                <a href="#certifications" class="nav-link text-white">Certifications</a>
+                <a href="#contact" class="nav-link text-white">Contact</a>
+                <a href="#future-enhancements" class="nav-link text-white">Future Goals</a>
+                <a href="#tech-used" class="nav-link text-white">Tech Used</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gradient-to-b from-gray-900 to-black bg-opacity-90 py-4">
+            <a href="#about" class="block px-6 py-2 text-white hover:bg-white hover:bg-opacity-10">About</a>
+            <a href="#skills" class="block px-6 py-2 text-white hover:bg-white hover:bg-opacity-10">Skills</a>
+            <a href="#projects" class="block px-6 py-2 text-white hover:bg-white hover:bg-opacity-10">Projects</a>
+            <a href="#experience" class="block px-6 py-2 text-white hover:bg-white hover:bg-opacity-10">Experience</a>
+            <a href="#certifications" class="block px-6 py-2 text-white hover:bg-white hover:bg-opacity-10">Certifications</a>
+            <a href="#contact" class="block px-6 py-2 text-white hover:bg-white hover:bg-opacity-10">Contact</a>
+            <a href="#future-enhancements" class="block px-6 py-2 text-white hover:bg-white hover:bg-opacity-10">Future Goals</a>
+            <a href="#tech-used" class="block px-6 py-2 text-white hover:bg-white hover:bg-opacity-10">Tech Used</a>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section id="hero" class="relative h-screen flex items-center justify-center text-center overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://placehold.co/1920x1080/000000/FFFFFF?text=Coding+Background'); opacity: 0.3;"></div>
+            <div class="relative z-10 p-8" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight text-white drop-shadow-lg">VIVEK SINGH</h1>
+                <p class="text-xl md:text-3xl font-light mb-8 text-gray-200">Software Engineer at RMSI Sustainability || Full Stack GIS Developer</p>
+                <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
+                    <a href="#contact" class="btn-primary inline-block">Get In Touch</a>
+                    <a href="https://www.linkedin.com/in/vivek791" target="_blank" class="btn-secondary inline-block">LinkedIn Profile</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="container mx-auto px-6 py-16">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white" data-aos="fade-down">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center glass-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="md:w-1/3 flex justify-center mb-8 md:mb-0">
+                    <img src="image/vivek_photo.png" alt="Vivek Singh Profile Image" class="rounded-full w-48 h-48 md:w-64 md:h-64 object-cover border-4 border-blue-400 shadow-lg">
+                </div>
+                <div class="md:w-2/3 md:pl-12 text-center md:text-left">
+                    <p class="text-lg">
+                        I am a Software Engineer with 3.5+ years of experience in full-stack web development, with a strong background in GIS projects and enterprise applications.
+                        I build clean, scalable systems using .NET Core Web API, ASP.NET Core MVC, ABP Framework, and Node.js. I have delivered GIS applications using CesiumJS, Leaflet, PostGIS, and WMS services, aligning technical solutions with business needs.
+                        While I have worked extensively in GIS, I am equally open to working in non-GIS technologies and domains, bringing the same focus on quality, performance, and user experience to every project.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="container mx-auto px-6 py-16">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white" data-aos="fade-down">Skills & Tech Stack</h2>
+            <div class="space-y-10">
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-2xl font-bold mb-6 text-white text-center md:text-left">Frontend Technologies</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center md:justify-items-start">
+                        <div class="skill-badge"><i class="fab fa-html5 text-xl text-orange-500"></i> HTML/CSS</div>
+                        <div class="skill-badge"><i class="fab fa-js-square text-xl text-yellow-400"></i> JavaScript</div>
+                        <div class="skill-badge"><i class="fas fa-code text-xl text-rose-400"></i> jQuery</div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-2xl font-bold mb-6 text-white text-center md:text-left">Backend & Database</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center md:justify-items-start">
+                        <div class="skill-badge"><i class="fab fa-node-js text-xl text-green-500"></i> Node.js</div>
+                        <div class="skill-badge"><i class="fas fa-database text-xl text-blue-400"></i> PostgreSQL</div>
+                        <div class="skill-badge"><i class="fas fa-code text-xl text-purple-400"></i> C#</div>
+                        <div class="skill-badge"><i class="fas fa-code-branch text-xl text-pink-400"></i> .NET Core ABP Framework</div>
+                        <div class="skill-badge"><i class="fas fa-network-wired text-xl text-cyan-400"></i> ASP.NET Core Web API</div>
+                        <div class="skill-badge"><i class="fas fa-sitemap text-xl text-teal-400"></i> ASP.NET Core MVC</div>
+                        <div class="skill-badge"><i class="fas fa-database text-xl text-lime-400"></i> EF Core</div>
+                        <div class="skill-badge"><i class="fas fa-terminal text-xl text-yellow-600"></i> Python FastAPI</div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-2xl font-bold mb-6 text-white text-center md:text-left">Cloud & DevOps</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center md:justify-items-start">
+                        <div class="skill-badge"><i class="fab fa-aws text-xl text-orange-300"></i> AWS EC2</div>
+                        <div class="skill-badge"><i class="fab fa-docker text-xl text-blue-500"></i> Docker</div>
+                        <div class="skill-badge"><i class="fas fa-server text-xl text-gray-400"></i> IIS Server</div>
+                        <div class="skill-badge"><i class="fas fa-cogs text-xl text-orange-400"></i> Project Deployment</div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="text-2xl font-bold mb-6 text-white text-center md:text-left">GIS & Spatial Technologies</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center md:justify-items-start">
+                        <div class="skill-badge"><i class="fas fa-map-marked-alt text-xl text-red-400"></i> GIS</div>
+                        <div class="skill-badge"><i class="fas fa-cube text-xl text-blue-300"></i> Cesium 3D.js</div>
+                        <div class="skill-badge"><i class="fas fa-server text-xl text-green-300"></i> PostGIS</div>
+                        <div class="skill-badge"><i class="fas fa-layer-group text-xl text-purple-300"></i> Leaflet</div>
+                        <div class="skill-badge"><i class="fas fa-map-pin text-xl text-fuchsia-400"></i> OpenLayers</div>
+                        <div class="skill-badge"><i class="fas fa-map-marker-alt text-xl text-emerald-400"></i> QGIS</div>
+                        <div class="skill-badge"><i class="fas fa-server text-xl text-sky-400"></i> GeoServer</div>
+                        <div class="skill-badge"><i class="fas fa-image text-xl text-cyan-500"></i> Rasterio</div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="500">
+                    <h3 class="text-2xl font-bold mb-6 text-white text-center md:text-left">AI Tools & Platforms</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center md:justify-items-start">
+                        <div class="skill-badge"><i class="fas fa-robot text-xl text-blue-400"></i> ChatGPT</div>
+                        <div class="skill-badge"><i class="fas fa-brain text-xl text-purple-400"></i> DeepSeek</div>
+                        <div class="skill-badge"><i class="fas fa-meteor text-xl text-orange-400"></i> GROK</div>
+                        <div class="skill-badge"><i class="fas fa-gem text-xl text-teal-400"></i> Gemini</div>
+                        <div class="skill-badge"><i class="fas fa-code-branch text-xl text-green-400"></i> Copilot</div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="600">
+                    <h3 class="text-2xl font-bold mb-6 text-white text-center md:text-left">Tools & Methodologies</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center md:justify-items-start">
+                        <div class="skill-badge"><i class="fas fa-project-diagram text-xl text-indigo-400"></i> Software Design</div>
+                        <div class="skill-badge"><i class="fas fa-globe text-xl text-teal-400"></i> Web Engineering</div>
+                        <div class="skill-badge"><i class="fas fa-code-branch text-xl text-gray-500"></i> SourceTree Git</div>
+                        <div class="skill-badge"><i class="fas fa-laptop-code text-xl text-blue-600"></i> Visual Studio</div>
+                        <div class="skill-badge"><i class="fas fa-file-code text-xl text-cyan-600"></i> VS Code</div>
+                        <div class="skill-badge"><i class="fas fa-database text-xl text-green-700"></i> PGAdmin</div>
+                        <div class="skill-badge"><i class="fas fa-share-alt text-xl text-purple-600"></i> Postman</div>
+                        <div class="skill-badge"><i class="fas fa-tasks text-xl text-red-600"></i> Redmine PM Tool</div>
+                        <div class="skill-badge"><i class="fas fa-map-marker-alt text-xl text-yellow-700"></i> IGIS</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="container mx-auto px-6 py-16">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white" data-aos="fade-down">Featured Projects</h2>
+
+            <h3 class="text-3xl font-bold text-center mb-8 text-white" data-aos="fade-down" data-aos-delay="100">Personal Projects</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Personal Project: The Profit Era -->
+                <div class="glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://placehold.co/600x400/00bfff/FFFFFF?text=The+Profit+Era" alt="The Profit Era Website Screenshot" class="rounded-lg mb-6 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold mb-3 text-white">The Profit Era</h3>
+                    <p class="text-gray-300 mb-4">A comprehensive finance and investment website offering a paper trading solution. Features include live market data updates via Python FastAPI caching and WebSockets, robust user management, subscription handling, and transaction management. Hosted on a personal server setup using Docker for efficient deployment.</p>
+                    <div class="flex justify-between items-center">
+                        <a href="https://theprofitera.com/" target="_blank" class="text-blue-400 hover:underline"><i class="fas fa-link mr-2"></i>Visit Website</a>
+                        <span class="text-sm text-gray-400">ASP.NET Core 8, Python FastAPI, WebSockets, Docker</span>
+                    </div>
+                </div>
+
+                <!-- Personal Project: FinnotechPulse -->
+                <div class="glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://placehold.co/600x400/8a2be2/FFFFFF?text=FinnotechPulse" alt="FinnotechPulse Website Screenshot" class="rounded-lg mb-6 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold mb-3 text-white">FinnotechPulse</h3>
+                    <p class="text-gray-300 mb-4">An AI tool exploration and comparison platform, allowing users to discover and compare multiple AI tools based on their capabilities. Also serves as an AI tool learning platform and provides the latest tech and AI news.</p>
+                    <div class="flex justify-between items-center">
+                        <a href="https://finnotechpulse.com/" target="_blank" class="text-blue-400 hover:underline"><i class="fas fa-link mr-2"></i>Visit Website</a>
+                        <span class="text-sm text-gray-400">AI Tools, Learning Platform, Tech News</span>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-3xl font-bold text-center mb-8 text-white" data-aos="fade-down" data-aos-delay="400">Company Projects</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Company Project 1: Disaster Management System -->
+                <div class="glass-card" data-aos="fade-up" data-aos-delay="500">
+                    <img src="https://placehold.co/600x400/0f3460/FFFFFF?text=Disaster+Management" alt="Disaster Management System Project" class="rounded-lg mb-6 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Disaster Management System</h3>
+                    <p class="text-gray-300 mb-4">Spearheaded the development of a spatially aware application utilizing open-source GIS tools like GeoServer, QGIS, OpenLayers, Leaflet, and Cesium for effective disaster response and management. <span class="text-sm text-red-300">(URL not provided due to company policy)</span></p>
+                    <div class="flex justify-end items-center">
+                        <span class="text-sm text-gray-400">GIS, .NET Core, PostgreSQL</span>
+                    </div>
+                </div>
+                <!-- Company Project 2: Agriculture Domain Application -->
+                <div class="glass-card" data-aos="fade-up" data-aos-delay="600">
+                    <img src="https://placehold.co/600x400/16213e/FFFFFF?text=Agriculture+App" alt="Agriculture Domain Application Project" class="rounded-lg mb-6 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Agriculture Domain Application</h3>
+                    <p class="text-gray-300 mb-4">Pioneered the development of an application for the agriculture sector, leveraging GIS technologies to improve decision-making processes and streamline operations for tangible client benefits. <span class="text-sm text-red-300">(URL not provided due to company policy)</span></p>
+                    <div class="flex justify-end items-center">
+                        <span class="text-sm text-gray-400">GIS, Node.js, Leaflet</span>
+                    </div>
+                </div>
+                <!-- Company Project 3: Forest and Smart City POCs -->
+                <div class="glass-card" data-aos="fade-up" data-aos-delay="700">
+                    <img src="https://placehold.co/600x400/3f2b96/FFFFFF?text=Smart+City+POC" alt="Forest and Smart City POCs Project" class="rounded-lg mb-6 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Forest and Smart City POCs</h3>
+                    <p class="text-gray-300 mb-4">Played a pivotal role in Proof of Concept (POC) projects focused on Forest management and Smart City initiatives, contributing to innovative solutions and product development. <span class="text-sm text-red-300">(URL not provided due to company policy)</span></p>
+                    <div class="flex justify-end items-center">
+                        <span class="text-sm text-gray-400">.NET Core, GIS, PostGIS</span>
+                    </div>
+                </div>
+                <!-- Company Project 4: Crime Analysis Product Development -->
+                <div class="glass-card" data-aos="fade-up" data-aos-delay="800">
+                    <img src="https://placehold.co/600x400/1a1a2e/FFFFFF?text=Crime+Analysis" alt="Crime Analysis Product Development Project" class="rounded-lg mb-6 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Crime Analysis Product Development</h3>
+                    <p class="text-gray-300 mb-4">Contributed to the development of a Crime Analysis Product, enhancing capabilities for data interpretation and strategic insights in public safety. <span class="text-sm text-red-300">(URL not provided due to company policy)</span></p>
+                    <div class="flex justify-end items-center">
+                        <span class="text-sm text-gray-400">C#, PostgreSQL, Data Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="container mx-auto px-6 py-16">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white" data-aos="fade-down">Work Experience & Growth</h2>
+            <div class="space-y-10">
+                <!-- RMSI -->
+                <div class="glass-card flex flex-col md:flex-row items-start" data-aos="fade-right">
+                    <div class="md:w-1/4 flex-shrink-0 mb-4 md:mb-0 md:pr-8 text-center">
+                        <a href="https://www.rmsi.com/" target="_blank">
+                            <img src="image/rmsi.jpg" alt="RMSI Logo" class="mx-auto mb-2 rounded-full">
+                        </a>
+                        <h3 class="text-xl font-semibold text-white">RMSI</h3>
+                        <p class="text-md text-gray-300">Software Engineer</p>
+                        <p class="text-sm text-gray-400">April 2025 - Present (4 months)</p>
+                        <p class="text-sm text-gray-400">Noida, Uttar Pradesh, India</p>
+                    </div>
+                    <div class="md:w-3/4">
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>Developed and managed new application modules, designed and implemented REST APIs, and contributed to end-to-end software design.</li>
+                            <li>Specialized in GIS development using Leaflet, PostGIS, and WMS services, delivering interactive spatial applications and high-quality, maintainable solutions aligned with business objectives.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Scanpoint Geomatics Ltd - Software Engineer -->
+                <div class="glass-card flex flex-col md:flex-row items-start" data-aos="fade-left">
+                    <div class="md:w-1/4 flex-shrink-0 mb-4 md:mb-0 md:pr-8 text-center">
+                        <a href="https://www.sgligis.com/" target="_blank">
+                            <img src="image/scanpoint.jpg" alt="Scanpoint Geomatics Ltd Logo" class="mx-auto mb-2 rounded-full">
+                        </a>
+                        <h3 class="text-xl font-semibold text-white">Scanpoint Geomatics Ltd</h3>
+                        <p class="text-md text-gray-300">Software Engineer - .Net Core Full Stack Developer</p>
+                        <p class="text-sm text-gray-400">April 2023 - March 2025 (2 years)</p>
+                        <p class="text-sm text-gray-400">Ahmedabad, Gujarat, India</p>
+                    </div>
+                    <div class="md:w-3/4">
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>Experienced GIS Developer and Software Engineer leveraging diverse technologies including IIS, jQuery, EF Core, GIS, Node.js, Cesium 3D JS, .NET Core ABP Framework, PostGIS, and Rasterio.</li>
+                            <li>Spearheaded projects in Disaster Management and Agriculture domains, pioneering the development of spatially aware applications utilizing open-source GIS tools such as GeoServer, QGIS, OpenLayers, Leaflet, and Cesium.</li>
+                            <li>Significantly improved decision-making processes and streamlined operations, leading to tangible benefits for clients.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Scanpoint Geomatics Ltd - Associate Software Engineer -->
+                <div class="glass-card flex flex-col md:flex-row items-start" data-aos="fade-right">
+                    <div class="md:w-1/4 flex-shrink-0 mb-4 md:mb-0 md:pr-8 text-center">
+                        <a href="https://www.sgligis.com/" target="_blank">
+                            <img src="image/scanpoint.jpg" alt="Scanpoint Geomatics Ltd Logo" class="mx-auto mb-2 rounded-full">
+                        </a>
+                        <h3 class="text-xl font-semibold text-white">Scanpoint Geomatics Ltd</h3>
+                        <p class="text-md text-gray-300">Associate Software Engineer - .Net Core Full Stack Developer</p>
+                        <p class="text-sm text-gray-400">April 2022 - March 2023 (1 year)</p>
+                        <p class="text-sm text-gray-400">Ahmedabad, Gujarat, India</p>
+                    </div>
+                    <div class="md:w-3/4">
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>Honed expertise in Internet Information Services (IIS), jQuery, EF Core, GIS, Node.js, Cesium 3D js, .NET Core ABP Framework, PostGIS, and database management.</li>
+                            <li>Played a pivotal role in projects focused on Forest and Smart City POCs, as well as Crime Analysis Product Development.</li>
+                            <li>Committed to delivering high-quality solutions and embracing continuous learning to contribute effectively to project success.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Scanpoint Geomatics Ltd - Full-stack Developer (Trainee) -->
+                <div class="glass-card flex flex-col md:flex-row items-start" data-aos="fade-left">
+                    <div class="md:w-1/4 flex-shrink-0 mb-4 md:mb-0 md:pr-8 text-center">
+                        <a href="https://www.sgligis.com/" target="_blank">
+                            <img src="image/scanpoint.jpg" alt="Scanpoint Geomatics Ltd Logo" class="mx-auto mb-2 rounded-full">
+                        </a>
+                        <h3 class="text-xl font-semibold text-white">Scanpoint Geomatics Ltd</h3>
+                        <p class="text-md text-gray-300">Trainee - .Net Core Full Stack Developer</p>
+                        <p class="text-sm text-gray-400">August 2021 - March 2022 (8 months)</p>
+                        <p class="text-sm text-gray-400">Ahmedabad, Gujarat, India</p>
+                    </div>
+                    <div class="md:w-3/4">
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>Immersed in mastering HTML, CSS, database management, .NET Core ABP Framework, JavaScript, jQuery, and Node.js.</li>
+                            <li>Developed Proof of Concept (POC) projects for diverse domains like CABS, Smart City, and Highway Tollbooth.</li>
+                            <li>Built a robust foundation in full-stack development through hands-on learning and project work, priming for future roles in software engineering.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Acty System India, Pvt. Ltd -->
+                <div class="glass-card flex flex-col md:flex-row items-start" data-aos="fade-right">
+                    <div class="md:w-1/4 flex-shrink-0 mb-4 md:mb-0 md:pr-8 text-center">
+                        <a href="https://www.acty-sys.com/in/en/index.html" target="_blank">
+                            <img src="image/acty.jpg" alt="Acty System India, Pvt. Ltd Logo" class="mx-auto mb-2 rounded-full">
+                        </a>
+                        <h3 class="text-xl font-semibold text-white">Acty System India, Pvt. Ltd</h3>
+                        <p class="text-md text-gray-300">Trainee - C# Programmer</p>
+                        <p class="text-sm text-gray-400">February 2021 - May 2021 (4 months)</p>
+                        <p class="text-sm text-gray-400">Ahmedabad, Gujarat, India</p>
+                    </div>
+                    <div class="md:w-3/4">
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>Learned the basics of C# programming and developed console-based applications.</li>
+                            <li>Eager to apply newfound skills and continue growing as a programmer.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="container mx-auto px-6 py-16">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white" data-aos="fade-down">Certifications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass-card" data-aos="zoom-in" data-aos-delay="100">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Reliable Cloud Infrastructure: Design and Process</h3>
+                    <p class="text-gray-300">Google Cloud</p>
+                    <a href="https://coursera.org/share/7aff634f434ed6e56fffd220de7d62ae" target="_blank" class="text-blue-400 hover:underline text-sm">View Certificate</a>
+                </div>
+                <div class="glass-card" data-aos="zoom-in" data-aos-delay="200">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Spoken Tutorial Php and MySQL</h3>
+                    <p class="text-gray-300">IIT Bombay</p>
+                    <a href="https://spoken-tutorial.org/software-training/test/participant/certificate/40086/1777339/" target="_blank" class="text-blue-400 hover:underline text-sm">View Certificate</a>
+                </div>
+                <div class="glass-card" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Essential Google Cloud Infrastructure: Core Services</h3>
+                    <p class="text-gray-300">Google Cloud</p>
+                    <a href="https://coursera.org/share/853c5f9e81fe0e4a220d065cbe0d22c8" target="_blank" class="text-blue-400 hover:underline text-sm">View Certificate</a>
+                </div>
+                <div class="glass-card" data-aos="zoom-in" data-aos-delay="400">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Spoken Tutorial Java Programming</h3>
+                    <p class="text-gray-300">IIT Bombay</p>
+                    <a href="https://spoken-tutorial.org/software-training/test/participant/certificate/40075/1777339/" target="_blank" class="text-blue-400 hover:underline text-sm">View Certificate</a>
+                </div>
+                <div class="glass-card" data-aos="zoom-in" data-aos-delay="500">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Architecting with Google Compute Engine</h3>
+                    <p class="text-gray-300">Google Cloud</p>
+                    <a href="https://coursera.org/share/7aff634f434ed6e56fffd220de7d62ae" target="_blank" class="text-blue-400 hover:underline text-sm">View Certificate</a>
+                </div>
+                <div class="glass-card" data-aos="zoom-in" data-aos-delay="600">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Elastic Google Cloud Infrastructure: Scaling and Automation</h3>
+                    <p class="text-gray-300">Google Cloud</p>
+                    <a href="https://coursera.org/share/bc33bec8f65735ad9ae361a78a72e1f0" target="_blank" class="text-blue-400 hover:underline text-sm">View Certificate</a>
+                </div>
+                <div class="glass-card" data-aos="zoom-in" data-aos-delay="700">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Fundamentals of Digital Marketing</h3>
+                    <p class="text-gray-300">Google Digital Garage</p>
+                    <a href="https://drive.google.com/file/d/1TV8YBEU_gBaT4Gh5AsNjmqDHVX4CjRpC/view" target="_blank" class="text-blue-400 hover:underline text-sm">View Certificate</a>
+                </div>
+                <div class="glass-card" data-aos="zoom-in" data-aos-delay="800">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Spoken Tutorial C Programming</h3>
+                    <p class="text-gray-300">IIT Bombay</p>
+                    <a href="https://spoken-tutorial.org/software-training/test/participant/certificate/36650/1777339/" target="_blank" class="text-blue-400 hover:underline text-sm">View Certificate</a>
+                </div>
+                <div class="glass-card" data-aos="zoom-in" data-aos-delay="900">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Spoken Tutorial Introduction of Computer</h3>
+                    <p class="text-gray-300">IIT Bombay</p>
+                    <a href="https://spoken-tutorial.org/software-training/test/participant/certificate/36650/1777339/" target="_blank" class="text-blue-400 hover:underline text-sm">View Certificate</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Enhancements Section -->
+        <section id="future-enhancements" class="container mx-auto px-6 py-16">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white" data-aos="fade-down">Where I Want to Enhance More</h2>
+            <div class="glass-card max-w-3xl mx-auto text-lg space-y-4" data-aos="fade-up">
+                <p>I am continuously striving to expand my skill set and deepen my expertise in several key areas:</p>
+                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                    <li><strong>Advanced Cloud Architectures:</strong> Exploring more complex cloud patterns, serverless computing, and cost optimization strategies on AWS and Azure.</li>
+                    <li><strong>Machine Learning Operations (MLOps):</strong> Gaining hands-on experience in deploying, managing, and scaling machine learning models in production environments.</li>
+                    <li><strong>Frontend Frameworks:</strong> Diving deeper into modern JavaScript frameworks like React.js and Next.js to build more dynamic and interactive user interfaces.</li>
+                    <li><strong>DevOps Practices:</strong> Enhancing proficiency in CI/CD pipelines, automated testing, and infrastructure as code (IaC) to streamline development workflows.</li>
+                    <li><strong>Blockchain Technology:</strong> Understanding the fundamentals and practical applications of blockchain for decentralized solutions.</li>
+                </ul>
+                <p>My goal is to integrate these advanced skills into future projects, delivering even more innovative and robust solutions.</p>
+            </div>
+        </section>
+
+        <!-- Tech Used in This Website Section -->
+        <section id="tech-used" class="container mx-auto px-6 py-16">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white" data-aos="fade-down">Tech Used to Build This Website</h2>
+            <div class="glass-card max-w-3xl mx-auto text-lg space-y-4" data-aos="fade-up">
+                <p>This portfolio website is crafted with a modern and responsive design, leveraging the following technologies:</p>
+                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                    <li><strong>HTML5:</strong> The foundational structure of the website.</li>
+                    <li><strong>CSS3 (Tailwind CSS):</strong> For rapid and responsive styling, ensuring a clean and mobile-first design.</li>
+                    <li><strong>JavaScript:</strong> Powers interactive elements, smooth scrolling, and dynamic features.</li>
+                    <li><strong>AOS (Animate On Scroll):</strong> Provides elegant scroll-based animations for a dynamic user experience.</li>
+                    <li><strong>Font Awesome:</strong> Used for the clean and minimal icon badges across the site.</li>
+                    <li><strong>Google Fonts (Inter):</strong> Ensures a modern, readable, and consistent typography.</li>
+                </ul>
+                <p class="text-sm text-gray-400 mt-4">This code was generated by Gemini.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container mx-auto px-6 py-16">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white" data-aos="fade-down">Get In Touch</h2>
+            <div class="glass-card max-w-2xl mx-auto" data-aos="fade-up">
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-gray-200 text-lg font-medium mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="w-full p-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 focus:outline-none focus:ring-2 focus:ring-blue-400 text-white" placeholder="Your Name">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-200 text-lg font-medium mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full p-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 focus:outline-none focus:ring-2 focus:ring-blue-400 text-white" placeholder="your.email@example.com">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-200 text-lg font-medium mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" class="w-full p-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 focus:outline-none focus:ring-2 focus:ring-blue-400 text-white" placeholder="Your message..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full text-center">Send Message</button>
+                </form>
+                <div class="mt-8 text-center">
+                    <p class="text-lg mb-4">Or connect with me on social media:</p>
+                    <div class="flex justify-center space-x-6 text-3xl">
+                        <a href="https://www.linkedin.com/in/vivek791" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/kvivek419" target="_blank" class="text-gray-400 hover:text-gray-300 transition-colors"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/vivek_kumar_3" target="_blank" class="text-blue-300 hover:text-blue-200 transition-colors"><i class="fab fa-twitter"></i></a>
+                        <a href="mailto:vivekkumarsingh791@gmail.com" class="text-red-400 hover:text-red-300 transition-colors"><i class="fas fa-envelope"></i></a>
+                        <a href="https://wa.me/919507284656" target="_blank" class="text-green-400 hover:text-green-300 transition-colors"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://finnotechpulse.com/" target="_blank" class="text-purple-400 hover:text-purple-300 transition-colors"><i class="fas fa-globe"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-gray-900 to-black bg-opacity-80 backdrop-blur-md py-8 text-center text-gray-300">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2025 Vivek Singh. All rights reserved.</p>
+            <p class="text-sm mt-2">Last Updated: July 13, 2025</p>
+            <p class="text-sm mt-2"><a href="vivek_singh_cv.html" download class="text-blue-400 hover:underline">Download My CV</a></p>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

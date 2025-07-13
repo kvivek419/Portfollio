@@ -1,0 +1,142 @@
+/* style.css */
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* Darker, more vibrant gradient background */
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    color: #e0e0e0;
+    line-height: 1.8; /* Further improved readability */
+    overflow-x: hidden; /* Prevent horizontal scroll due to animations */
+}
+h1, h2, h3, h4 {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Subtle text shadow for depth */
+    font-weight: 700; /* Ensure headings are bold and clear */
+    letter-spacing: 0.025em; /* Slightly increased letter spacing for headings */
+}
+p {
+    font-weight: 300; /* Lighter font weight for body text for better contrast */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for body text */
+}
+.glass-card {
+    background: rgba(255, 255, 255, 0.08); /* Slightly less opaque for darker theme */
+    backdrop-filter: blur(12px); /* Increased blur for stronger effect */
+    border: 1px solid rgba(255, 255, 255, 0.15); /* Adjusted border opacity */
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4); /* Darker shadow for contrast */
+    padding: 2rem;
+    margin: 1rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.glass-card:hover {
+    transform: translateY(-8px); /* More pronounced lift on hover */
+    box-shadow: 0 16px 48px 0 rgba(0, 0, 0, 0.6); /* Stronger shadow on hover */
+}
+.skill-badge {
+    background: rgba(255, 255, 255, 0.12); /* Adjusted opacity */
+    backdrop-filter: blur(6px); /* Increased blur */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Adjusted border opacity */
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    color: #f0f0f0;
+    transition: background 0.3s ease, transform 0.2s ease; /* Added transform for hover */
+}
+.skill-badge:hover {
+    background: rgba(255, 255, 255, 0.25); /* More visible hover */
+    transform: translateY(-3px); /* Subtle lift on hover */
+}
+.nav-link {
+    transition: color 0.3s ease-in-out, transform 0.2s ease;
+}
+.nav-link:hover {
+    color: #00bfff; /* Deep Sky Blue on hover */
+    transform: translateY(-2px);
+}
+.btn-primary {
+    /* More vibrant gradient */
+    background: linear-gradient(45deg, #8a2be2 0%, #00bfff 100%); /* Blue Violet to Deep Sky Blue */
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+.btn-primary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    background: linear-gradient(45deg, #00bfff 0%, #8a2be2 100%); /* Reverse gradient on hover */
+}
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+.btn-secondary:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #00bfff; /* Highlight border on hover */
+}
+/* Smooth scroll effect */
+html {
+    scroll-behavior: smooth;
+}
+/* Custom scrollbar for aesthetics */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 191, 255, 0.5); /* Deep Sky Blue for scrollbar */
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 191, 255, 0.7);
+}
+
+/* 3D Effects and Readability Enhancements */
+@keyframes background-pan {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 15% 50%, rgba(0, 191, 255, 0.1) 0%, transparent 25%),
+                radial-gradient(circle at 85% 50%, rgba(138, 43, 226, 0.1) 0%, transparent 25%);
+    background-size: 200% 200%;
+    animation: background-pan 20s linear infinite alternate;
+    z-index: 0; /* Ensure it's behind content but above the static background image */
+}
+
+/* Responsive adjustments for hero section text */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 3.5rem; /* Adjust for smaller screens */
+    }
+    #hero p {
+        font-size: 1.5rem; /* Adjust for smaller screens */
+    }
+}
+@media (max-width: 480px) {
+    #hero h1 {
+        font-size: 2.5rem; /* Further adjustment for very small screens */
+    }
+    #hero p {
+        font-size: 1.25rem;
+    }
+}
